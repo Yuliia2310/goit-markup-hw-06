@@ -420,9 +420,25 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-caption">Subscribe</p>
+          <div class="subscribe-container">
+          <form class="subscribe-form" name="subscribe_form" autocomplete="on">
+            <input type="email" user="user_mail" placeholder="E-mail" >
+            <label for="">          
+            </label>
+            
+             <button type="submit">Subscribe</button>
+
+          </form>
+        </div>
+
+        </div>
       </div>
     </footer>
     <!-------------------/FOOTER------------- -->
+
+
     <!-------------------Modal------------- -->
      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -430,7 +446,40 @@
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icon/sprite.svg#close"></use>
           </svg>
-        </button>
+        </button> 
+        <p>Leave your contacts and we will call you back</p>
+        <form class="order-form" name="order_form">
+          <label class="order-form-label" for="user_name">Name</label>
+          <div class="order-form-group">
+            <input class="order-form-field" type="text" name="user_name" id="user_name" />
+            <svg class="order-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_phone">Phone</label>
+          <div class="order-form-group">
+            <input class="order-form-field" type="text" name="user_phone" id="user_phone" />
+            <svg class="order-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_mail">Email</label>
+          <div class="order-form-group">
+            <input class="order-form-field" type="text" name="user_mail" id="user_mail" />
+            <svg class="order-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="order-form-comment"
+            name="user_comment"
+            id="user_comment"
+            rows="6"
+          ></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

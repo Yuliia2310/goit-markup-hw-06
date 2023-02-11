@@ -160,7 +160,7 @@ border-radius: 2px;
     color: var(--dark);
     padding-top: 24px;
     padding-bottom: 24px;
-    transition: color, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list {
@@ -186,7 +186,7 @@ border-radius: 2px;
     line-height: 1.5;
     color: var(--text);
     margin-left: auto;
-    transition: color, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -245,7 +245,7 @@ border-radius: 2px;
     letter-spacing: 0.04em;
     background-color: var(--primary-brand);
     color: var(--white-text-color);
-    transition: background-color, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -335,7 +335,7 @@ border-radius: 2px;
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
     box-shadow: 0px 1px 6px rgb(46, 47, 66, 0.16);
-    transition: box-shadow, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -360,7 +360,7 @@ border-radius: 2px;
     color: #ffffff;
     fill: currentColor;
     background-color: var(--primary-brand);
-    transition: background-color, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 
 }
@@ -411,8 +411,8 @@ border-radius: 2px;
     width: 168px;
     height: 88px;
     fill: currentColor;
-    transition: color, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customer-link:hover,
@@ -494,7 +494,7 @@ border-radius: 2px;
     color: #ffffff;
     fill: currentColor;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -502,6 +502,28 @@ border-radius: 2px;
     background-color: var(--success);
 
 }
+.subscribe {
+    display: flex;
+    margin-left: 120px;
+    width: 208px;
+}
+
+
+.subscribe-caption {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white-text-color);
+    margin-bottom: 16px;
+
+}
+.subscribe-container{
+    display: flex;
+    align-content: center;
+    gap: 24;
+}
+
 
 /* ===================  /Footer    ================ */
 
@@ -519,8 +541,13 @@ border-radius: 2px;
     border: var(--accent);
     padding: 12px 24px;
     border-radius: 4px;
-    transition: color, background-color,box-shadow, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property:color, background-color, box-shadow;
+    
+
 }
+
 
 .btn-styles {
     display: flex;
@@ -561,7 +588,7 @@ border-radius: 2px;
 .portfolio-link{
     display: block;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: box-shadow, 250ms, easy, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -585,7 +612,7 @@ border-radius: 2px;
     height:100%;
     background-color: rgba(77, 90, 229, 1);
     overflow: auto;
-    transition: transform 250ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 
    
@@ -625,7 +652,7 @@ border-radius: 2px;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms ease 200ms, visibility 250ms ease 200ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -659,8 +686,15 @@ border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #E7E9FC;
+    fill: currentColor;
 
 
+
+}
+.modal-btn:hover,
+.modal-btn:focus {
+    color:#FCFCFC;
+    background-color: #404bbf;
 }
 
 .backdrop.is-hidden .modal {
@@ -678,3 +712,4 @@ border-radius: 2px;
        
 
 /* ==============/Modal window=============== */
+
