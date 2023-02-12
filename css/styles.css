@@ -738,7 +738,7 @@ border-radius: 2px;
 .backdrop.is-hidden .modal {
     transform: translateX(50%) translateY(50%);
     opacity: 0;
-    transition-delay: 0;
+    transition-delay: 0ms;
 } 
 
 .backdrop.is-hidden {
