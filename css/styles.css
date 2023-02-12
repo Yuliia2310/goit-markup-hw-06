@@ -556,13 +556,11 @@ border-radius: 2px;
 }
 
 .styles-subscribe{
-
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: var(--white-text-color);
-    margin-right: 16px;
     justify-content: center;
     align-items: center;
 }
