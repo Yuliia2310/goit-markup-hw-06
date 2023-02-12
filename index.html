@@ -422,17 +422,13 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-caption">Subscribe</p>
-          <div class="subscribe-container">
           <form class="subscribe-form" name="subscribe_form" autocomplete="on">
-            <input type="email" user="user_mail" placeholder="E-mail" >
-            <label for="">          
-            </label>
-            
-             <button type="submit">Subscribe</button>
-
+             <input type="email" user="user_mail" placeholder="E-mail" class="form-input">         
+             <button type="submit" class="submit-btn"><span class="styles-subscribe">Subscribe</span> 
+               <svg class="footer-icon" width="24" height="20">
+                  <use href="./images/icon/sprite.svg#icon-send"></use>
+                </svg></button>
           </form>
-        </div>
-
         </div>
       </div>
     </footer>
@@ -447,27 +443,27 @@
             <use href="./images/icon/sprite.svg#close"></use>
           </svg>
         </button> 
-        <p>Leave your contacts and we will call you back</p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="order-form" name="order_form">
           <label class="order-form-label" for="user_name">Name</label>
           <div class="order-form-group">
             <input class="order-form-field" type="text" name="user_name" id="user_name" />
-            <svg class="order-form-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="order-form-icon" width="22" height="24">
+              <use href="./images/icon/sprite.svg#icon-person"></use>
             </svg>
           </div>
           <label class="order-form-label" for="user_phone">Phone</label>
           <div class="order-form-group">
             <input class="order-form-field" type="text" name="user_phone" id="user_phone" />
-            <svg class="order-form-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/icon/sprite.svg#icon-phone"></use>
             </svg>
           </div>
           <label class="order-form-label" for="user_mail">Email</label>
           <div class="order-form-group">
             <input class="order-form-field" type="text" name="user_mail" id="user_mail" />
-            <svg class="order-form-icon" width="20" height="20">
-              <use href=""></use>
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/icon/sprite.svg#icon-email"></use>
             </svg>
           </div>
           <label class="order-form-label" for="user_comment">Comment</label>
@@ -476,12 +472,27 @@
             name="user_comment"
             id="user_comment"
             rows="6"
+            placeholder="Text input"
           ></textarea>
+           <label class="order-form-agreement">
+            <input class="order-form-checkbox" type="checkbox" />
+            <span class="order-form-desc">
+              I accept the terms and conditions of the
+              <a class="order-form-link" href="">Privacy Policy</a>
+            </span>
+          </label>
+          <button class="order-form-btn" type="submit">Send</button>
           <button class="btn" type="submit">Send</button>
         </form>
       </div>
       </div>
+
+       <!-------------------/Modal------------- -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/phone-mask.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
